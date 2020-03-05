@@ -17,7 +17,18 @@
   "devDependencies": {
     "babel-plugin-emotion": "10.0.19",
     "babel-plugin-macros": "2.6.1",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "1.19.1",
     "tailwind.macro": "1.0.0-alpha.10",
     "tailwindcss": "1.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
