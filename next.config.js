@@ -1,10 +1,8 @@
-module.exports = {
-  webpack: (config, options) => {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty',
-    }
+const path = require('path')
 
+module.exports = {
+  webpack: config => {
+    config.resolve.alias['~'] = path.resolve('./src')
     return config
-  },
+  }
 }
