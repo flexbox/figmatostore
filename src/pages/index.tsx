@@ -1,6 +1,12 @@
 import React from 'react'
 import Hero from '~/components/Hero'
+import Team from '~/components/Team'
 
-const Example = () => <Hero></Hero>
-
-export default Example
+export default function Index() {
+  return (
+    <main className="container">
+      <Hero />
+      <Team />
+    </main>
+  )
+}
