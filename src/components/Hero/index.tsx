@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { figmaDemo, gumroad } from '~/data/index'
+
 export default function Hero() {
   return (
     <div>
@@ -111,24 +113,29 @@ export default function Hero() {
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 Ready to export screenshots
                 <br className="xl:hidden" />
-                <span className="text-indigo-600"> for busy developers</span>
+                <span className="text-indigo-600"> for busy designers</span>
               </h2>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                 All the materials are{' '}
-                <strong>guaranteed to be up to date</strong>.
+                <strong className="font-bold">
+                  guaranteed to be up to date
+                </strong>
+                .
               </p>
               <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
+                    href={gumroad}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
-                    Get started
+                    Purchase
                   </a>
                 </div>
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                   <a
-                    href="#"
+                    href={figmaDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Live demo
