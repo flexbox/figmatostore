@@ -1,147 +1,76 @@
 import React from 'react'
 
-import { figmaDemo, gumroad } from '~/data/index'
+import Gravatar from 'react-gravatar'
+import { figmaDemo } from '~/data/index'
+import BuyButton from '~/components/BuyButton'
 
 export default function Hero() {
   return (
-    <div>
-      <div className="relative bg-gray-50 overflow-hidden">
-        <div className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full">
-          <div className="relative h-full max-w-screen-xl mx-auto">
-            <svg
-              className="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
-              width="404"
-              height="784"
-              fill="none"
-              viewBox="0 0 404 784"
-            >
-              <defs>
-                <pattern
-                  id="svg-pattern-squares-1"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    className="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="784"
-                fill="url(#svg-pattern-squares-1)"
-              />
-            </svg>
-            <svg
-              className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
-              width="404"
-              height="784"
-              fill="none"
-              viewBox="0 0 404 784"
-            >
-              <defs>
-                <pattern
-                  id="svg-pattern-squares-2"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    className="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="784"
-                fill="url(#svg-pattern-squares-2)"
-              />
-            </svg>
-          </div>
-        </div>
+    <div className="relative min-h-screen overflow-hidden bg-gray-900">
+      <div className="hidden lg:block absolute scroll-bg"></div>
 
-        <div className="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
-          <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-            <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
-                  <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9 sm:truncate">
-                    Figma To Store
-                  </h2>
-                  <div className="-mr-2 flex items-center md:hidden">
-                    <button
-                      type="button"
-                      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                    >
-                      <svg
-                        className="h-6 w-6"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
+      <div className="relative min-h-screen lg:min-w-3xl xl:min-w-4xl lg:flex lg:items-center lg:justify-center lg:w-3/5 lg:py-20 lg:pl-8 lg:pr-8 bg-no-repeat">
+        <div>
+          <div className="px-6 pt-8 pb-12 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-none lg:pt-0 lg:pb-16">
+            <div className="flex items-center justify-between">
+              <div className="font-semibold text-gray-300 uppercase">
+                Figma To Store
               </div>
-            </nav>
+            </div>
           </div>
-
-          <div className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
-            <div className="text-center">
-              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                Ready to export screenshots
-                <br className="xl:hidden" />
-                <span className="text-indigo-600"> for busy designers</span>
-              </h2>
-              <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                All the materials are{' '}
-                <strong className="font-bold">
-                  guaranteed to be up to date
-                </strong>
-                .
-              </p>
-              <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-                <div className="rounded-md shadow">
-                  <a
-                    href={gumroad}
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                  >
-                    Purchase
-                  </a>
+          <div className="px-6 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-none">
+            <p className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
+              Now in early access
+            </p>
+            <h1 className="mt-3 text-3xl leading-9 font-semibold font-display text-white sm:mt-6 sm:text-4xl sm:leading-10 xl:text-5xl xl:leading-none">
+              Beautiful apps screenshots,
+              <br className="hidden sm:inline" />
+              <span className="text-indigo-400">to publish in no-time.</span>
+            </h1>
+            <p className="mt-2 text-lg leading-7 text-gray-300 sm:mt-3 sm:text-xl sm:max-w-xl xl:mt-4 xl:text-2xl xl:max-w-2xl">
+              I shipped dozen of apps to the Apple store and Google play.
+              Everytime, it’s a pain to coordinate everyone. Let’s fix it with
+              this Figma boilerplate.
+            </p>
+            <div className="mt-6 sm:flex sm:mt-8 xl:mt-12">
+              <a
+                href={figmaDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-gray-900 bg-white shadow-sm hover:text-gray-600 focus:outline-none focus:text-gray-600 transition ease-in-out duration-150 xl:text-lg xl:py-4"
+              >
+                Explore the preview
+              </a>
+              <BuyButton></BuyButton>
+            </div>
+          </div>
+          <div className="mt-8 sm:mt-12 relative h-64 overflow-hidden bg-gray-300 lg:hidden">
+            <div className="absolute scroll-bg"></div>
+          </div>
+          <div className="px-6 py-8 sm:pt-12 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-full lg:py-0 lg:pt-24">
+            <p className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
+              Designed by
+            </p>
+            <div className="mt-4 sm:flex">
+              <a
+                href="https://twitter.com/flexbox_"
+                className="flex items-center no-underline"
+              >
+                <div className="flex-shrink-0">
+                  <Gravatar
+                    className="h-12 w-12 rounded-full border-2 border-white"
+                    email="dleuliette@gmail.com"
+                  />
                 </div>
-                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                  <a
-                    href={figmaDemo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                  >
-                    Live demo
-                  </a>
+                <div className="ml-3">
+                  <p className="font-semibold text-white leading-tight">
+                    David Leuliette
+                  </p>
+                  <p className="text-sm text-gray-500 leading-tight">
+                    React Native Developer
+                  </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
