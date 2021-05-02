@@ -1,41 +1,21 @@
-# TypeScript Next.js example
+![FIGMA TO STORE](./public/github-thumbnail.png)
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This design kit helps to design mobile apps screenshots for iOS and Android, more information on [figmatostore.com](https://figmatostore.com/)
 
-## Deploy your own
+## What to do
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+- [Ask me a question](https://twitter.com/flexbox_)
+- [Support on Gumroad](https://gum.co/figmatostore)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+## Highlights
 
-## How to use it?
+- 8 quality exportable screenshot for mobile (100% customizable & reusable)
+- Helps to build preview design in Figma
+- Made as a components-driven library
+- Nice typography with Inter fonts
+- Labeled for faster workflow
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+❖ Templates categories: 5.5 inches and 6.5 inches
+❖ Mobile used: iPhone 11, iPhone 8, Pixel 4
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+[https://figmatostore.com/](https://figmatostore.com/)
