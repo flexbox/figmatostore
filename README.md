@@ -16,6 +16,5 @@ This design kit helps to design mobile apps screenshots for iOS and Android, mor
 - Labeled for faster workflow
 
 ❖ Templates categories: 5.5 inches and 6.5 inches
-❖ Mobile used: iPhone 11, iPhone 8, Pixel 4
 
-[https://figmatostore.com/](https://figmatostore.com/)
+❖ Mobile used: iPhone 11, iPhone 8, Pixel 4
