@@ -21,5 +21,6 @@ This design kit helps to design mobile apps screenshots for iOS and Android, mor
 
 ## Getting started
 
-```yarn ```
+```yarn```
+
 ```yarn start```
