@@ -76,7 +76,7 @@ const IndexPage = () => (
           <Image
             src="/demo.png"
             className=""
-            alt="Demo"
+            alt="Preview of figmatostore the screenshot template for iOS and Android"
             width={700}
             height={700}
           />
