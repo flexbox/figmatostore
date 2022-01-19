@@ -10,12 +10,12 @@ const IndexPage = () => (
     <Head>
       <title>My page title</title>
       <meta
-        name="og:image"
+        property="og:image"
         content="https://raw.githubusercontent.com/flexbox/figmatostore/bf9a5b283b3367fc63a3cee26973947a629b3203/public/image_og.png"
       />
-      <meta name="og:title" content="Figma to store" />
+      <meta property="og:title" content="Figma to store" />
       <meta
-        name="og:description"
+        property="og:description"
         content="Beautiful apps screenshots,
 to publish in no-time."
       />
