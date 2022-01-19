@@ -18,3 +18,10 @@ This design kit helps to design mobile apps screenshots for iOS and Android, mor
 ❖ Templates categories: 5.5 inches and 6.5 inches
 
 ❖ Mobile used: iPhone 11, iPhone 8, Pixel 4
+
+## Getting started
+
+```console
+yarn
+yarn start
+```
