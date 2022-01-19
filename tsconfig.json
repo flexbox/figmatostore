@@ -22,12 +22,14 @@
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
+
       "~/*": [
         "src/*"
       ],
       "*": [
         "node_modules/*"
       ]
+
     },
     "incremental": true
   },

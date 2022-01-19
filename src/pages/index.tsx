@@ -2,14 +2,15 @@ import Layout from '~/components/Layout'
 import Gravatar from 'react-gravatar'
 import { figmaDemo } from '~/data/index'
 import BuyButton from '~/components/BuyButton'
+import Image from 'next/image'
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
     <div className="relative min-h-screen overflow-hidden bg-gray-900">
       <div className="hidden lg:block absolute scroll-bg"></div>
 
-      <div className="relative min-h-screen lg:min-w-3xl xl:min-w-4xl lg:flex lg:items-center lg:justify-center lg:w-3/5 lg:py-20 lg:pl-8 lg:pr-8 bg-no-repeat">
-        <div>
+      <div className="relative min-h-screen lg:min-w-3xl xl:min-w-4xl lg:flex lg:items-center lg:justify-center  lg:py-20 lg:pl-8 lg:pr-8 bg-no-repeat">
+        <div className="w-full lg:w-2/5 ">
           <div className="px-6 pt-8 pb-12 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-none lg:pt-0 lg:pb-16">
             <div className="flex items-center justify-between">
               <div className="font-semibold text-gray-300 uppercase">
@@ -43,9 +44,7 @@ const IndexPage = () => (
               <BuyButton></BuyButton>
             </div>
           </div>
-          <div className="mt-8 sm:mt-12 relative h-64 overflow-hidden bg-gray-300 lg:hidden">
-            <div className="absolute scroll-bg"></div>
-          </div>
+
           <div className="px-6 py-8 sm:pt-12 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-full lg:py-0 lg:pt-24">
             <p className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
               Designed by
@@ -72,6 +71,15 @@ const IndexPage = () => (
               </a>
             </div>
           </div>
+        </div>
+        <div className="w-full lg:w-3/5 flex m-auto items-center align-middle justify-center">
+          <Image
+            src="/demo.png"
+            className=""
+            alt="Preview of figmatostore the screenshot template for iOS and Android"
+            width={700}
+            height={700}
+          />
         </div>
       </div>
     </div>
