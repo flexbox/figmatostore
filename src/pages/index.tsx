@@ -3,23 +3,9 @@ import Gravatar from 'react-gravatar'
 import { figmaDemo } from '~/data/index'
 import BuyButton from '~/components/BuyButton'
 import Image from 'next/image'
-import Head from 'next/head'
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
-    <Head>
-      <title>My page title</title>
-      <meta
-        property="og:image"
-        content="https://raw.githubusercontent.com/flexbox/figmatostore/bf9a5b283b3367fc63a3cee26973947a629b3203/public/image_og.png"
-      />
-      <meta property="og:title" content="Figma to store" />
-      <meta
-        property="og:description"
-        content="Beautiful apps screenshots,
-to publish in no-time."
-      />
-    </Head>
     <div className="relative min-h-screen overflow-hidden bg-gray-900">
       <div className="hidden lg:block absolute scroll-bg"></div>
 
