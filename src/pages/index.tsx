@@ -2,6 +2,7 @@ import Layout from '~/components/Layout'
 import Gravatar from 'react-gravatar'
 import { figmaDemo } from '~/data/index'
 import BuyButton from '~/components/BuyButton'
+import Image from 'next/image'
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
@@ -73,6 +74,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
+        <div>Test</div>
       </div>
     </div>
   </Layout>
