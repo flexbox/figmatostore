@@ -13,6 +13,12 @@ const IndexPage = () => (
         name="og:image"
         content="https://raw.githubusercontent.com/flexbox/figmatostore/bf9a5b283b3367fc63a3cee26973947a629b3203/public/image_og.png"
       />
+      <meta name="og:title" content="Figma to store" />
+      <meta
+        name="og:description"
+        content="Beautiful apps screenshots,
+to publish in no-time."
+      />
     </Head>
     <div className="relative min-h-screen overflow-hidden bg-gray-900">
       <div className="hidden lg:block absolute scroll-bg"></div>
