@@ -9,7 +9,10 @@ const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
     <Head>
       <title>My page title</title>
-      <meta name="og:image" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="og:image"
+        content="https://raw.githubusercontent.com/flexbox/figmatostore/bf9a5b283b3367fc63a3cee26973947a629b3203/public/image_og.png"
+      />
     </Head>
     <div className="relative min-h-screen overflow-hidden bg-gray-900">
       <div className="hidden lg:block absolute scroll-bg"></div>
